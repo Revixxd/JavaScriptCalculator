@@ -12,11 +12,16 @@
     margin: 0;
   }
 
-.container .output{
-  text-align: center;
+.container {
+  margin-top: 5%;
 }
+.output{
+  margin: 0 auto;
+  width: 405px;
 
+}
 h1{
+  text-align: right;
   margin-bottom: 0;
 }
 .buttons-grid {
@@ -33,7 +38,7 @@ h1{
   border-style: none;
   background-color: #50505080;
   border-radius: 50%;
-  font-size: 35px;
+  font-size: 40px;
 }
 .operetionButtonsRight{
   background-color: #ff9500;
@@ -43,10 +48,12 @@ h1{
 }
 /* numer zero jest blizej lewej krawedzi */
 .span-two{ 
+  padding-left: 18%;
+  text-align: left;
   color: white;
   border-style: none;
   background-color: #50505080;
   grid-column: span 2;
-  font-size: 35px;
+  font-size:40px;
   border-radius: 80px;;
 }
