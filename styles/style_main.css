@@ -1,0 +1,52 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-weight: normal;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    color:white;
+    background-color: #121111;
+    padding: 0;
+    margin: 0;
+  }
+
+.container .output{
+  text-align: center;
+}
+
+h1{
+  margin-bottom: 0;
+}
+.buttons-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.basicButtons{
+  color: white;
+  border-style: none;
+  background-color: #50505080;
+  border-radius: 50%;
+  font-size: 35px;
+}
+.operetionButtonsRight{
+  background-color: #ff9500;
+}
+.operetionButtonsUp{
+  background-color: #d4d4d29a;
+}
+/* numer zero jest blizej lewej krawedzi */
+.span-two{ 
+  color: white;
+  border-style: none;
+  background-color: #50505080;
+  grid-column: span 2;
+  font-size: 35px;
+  border-radius: 80px;;
+}
