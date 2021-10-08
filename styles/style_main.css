@@ -46,13 +46,16 @@ h1{
 .basicButtons:hover{
   background-color: #d4d4d269;
 }
-.operetionButtonsRight:hover{
-  background-color: #f7bd6c;
-}
+
 .operetionButtonsRight{
   background-color: #ff9500;
 }
+.operetionButtonsRight:hover{
+  background-color: #f7bd6c;
+}
+
 .operetionButtonsUp{
+  color: #121111;
   background-color: #d4d4d29a;
 }
 .operetionButtonsUp:hover{

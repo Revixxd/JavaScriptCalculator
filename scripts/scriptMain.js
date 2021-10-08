@@ -9,6 +9,7 @@ class Calculator{
         this.currentOperand = ''
         this.previousOperand = ''
         this.operetion = undefined;
+        console.log("clear all")
     }
     addNumberToScreen(number){
         
@@ -34,15 +35,15 @@ const previousOperandTextElement = '';
 // all data from html
 const currentOperandTextElement = document.getElementById('output');
 const numberButtons = document.querySelectorAll('[data-number-button]')
-const clearButton = document.querySelectorAll('[clear-button]');
-const changeOfSign = document.querySelectorAll('[change-of-sign]');
-const percent = document.querySelectorAll('[percent]');
-const division = document.querySelectorAll('[division]');
-const multiple = document.querySelectorAll('[multiple]');
-const minus = document.querySelectorAll('[minus]');
-const plus = document.querySelectorAll('[plus]');
-const comma = document.querySelectorAll('[comma]');
-const equals = document.querySelectorAll('[equals]');
+const clearButton = document.querySelector('[clear-button]');
+const changeOfSign = document.querySelector('[change-of-sign]');
+const percent = document.querySelector('[percent]');
+const division = document.querySelector('[division]');
+const multiple = document.querySelector('[multiple]');
+const minus = document.querySelector('[minus]');
+const plus = document.querySelector('[plus]');
+const comma = document.querySelector('[comma]');
+const equals = document.querySelector('[equals]');
 
 
 
@@ -56,3 +57,8 @@ numberButtons.forEach(button => {
         calculator.updateDisplay();
     })
 });
+
+clearButton.addEventListener('click', button =>{
+    calculator.clear()
+    calculator.updateDisplay()
+})
