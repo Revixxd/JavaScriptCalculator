@@ -17,7 +17,6 @@
 }
 
 .output{
-  border-style: solid;
   padding-top: 0px;;
   height: 80px;
   display: block;
@@ -51,7 +50,7 @@ h1{
 }
 
 .operetionButtonsRight{
-  background-color: #ffa200;
+  background-color: rgba(242, 164, 60, 1);
   font-size: 50px;
 }
 .operetionButtonsRight:hover{
@@ -60,10 +59,10 @@ h1{
 
 .operetionButtonsUp{
   color: #121111;
-  background-color: #d4d4d29a;
+  background-color: rgb(165, 165, 165);
 }
 .operetionButtonsUp:hover{
-  background-color: #d4d4d2c4;
+  background-color: rgb(199, 198, 198);
 }
 /* numer zero jest blizej lewej krawedzi */
 .span-two{ 
