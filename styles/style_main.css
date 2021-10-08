@@ -17,15 +17,18 @@
 }
 
 .output{
+  border-style: solid;
   padding-top: 0px;;
   height: 80px;
   display: block;
   margin: 0 auto;
-  width: 400px;
+  margin-bottom: 20px;;
+  width: 380px;
 }
 h1{
   text-align: right;
   margin: 0px;
+  font-size: 75px;
 }
 .buttons-grid {
   display: grid;
@@ -48,7 +51,8 @@ h1{
 }
 
 .operetionButtonsRight{
-  background-color: #ff9500;
+  background-color: #ffa200;
+  font-size: 50px;
 }
 .operetionButtonsRight:hover{
   background-color: #f7bd6c;
