@@ -1,8 +1,7 @@
 
 class Calculator{
-    constructor(currentOperandTextElement, previousOperandTextElement){
+    constructor(currentOperandTextElement){
         this.currentOperandTextElement = currentOperandTextElement;
-        this.previousOperandTextElement = previousOperandTextElement;
         this.clear()
     }   
     clear(){ //clear all
@@ -39,45 +38,34 @@ class Calculator{
             this.compute()
         }
         this.operetion = operetion
-        this.currentOperand = this.previousOperand 
+        this.previousOperand = this.currentOperand 
         this.currentOperand = ''
     }
 
     // computing the previous operand with currend one
-    compute(){
-        let computation 
+    compute() {
+        let computation
+        let prev = parseFloat(this.previousOperand)
+        let current = parseFloat(this.currentOperand)
+        if (isNaN(prev) || isNaN(current)) return
 
-        // parseFloat convert string to the number
-        const current = parseFloat(this.currentOperand)
-        const prev = parseFloat(this.previousOperand)
-        // if(isNan(prev) || isNan(current)) return
+        // this secions with if's could be made by switch 
+        if (this.operation = '+'){
+            computation = prev + current 
+        }
+        
+        
 
-        switch (this.operation){
-            case '+': // if this.operation = + below code execute
-            computation = prev + current
-            break
-            case '-': 
-            computation = prev - current
-            break
-            case '*': 
-            computation = prev * current
-            break
-            case '÷': 
-            computation = prev / current
-            break
-            default:
-              return
-          }
-        this.currentOperand = computation;
-        this.computation = undefined
+
+        this.currentOperand = computation
+        this.operation = undefined
         this.previousOperand = ''
-    }
+      }
 
 }
 
 
 
-const previousOperandTextElement = '';
 // all data from html
 
 
@@ -95,7 +83,7 @@ const equals = document.querySelector('[equals]');
 
 
 
-const calculator = new Calculator(currentOperandTextElement, previousOperandTextElement)
+const calculator = new Calculator(currentOperandTextElement)
 
 //actions after clicking specyfic button
 numberButtons.forEach(button => { 
