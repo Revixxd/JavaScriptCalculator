@@ -63,14 +63,18 @@ class Calculator{
         if (this.operation === '÷'){
             computation = prev / current 
         }
-        
+        if (this.operation === '%'){
 
+        }
 
         this.currentOperand = computation
         this.operation = undefined
         this.previousOperand = ''
       }
-
+    
+    reverse(){
+        this.currentOperand = this.currentOperand * (-1)
+    }
 }
 
 
@@ -87,7 +91,7 @@ const clearButton = document.querySelector('[clear-button]');
 const changeOfSign = document.querySelector('[change-of-sign]');
 const percent = document.querySelector('[percent]');
 const equals = document.querySelector('[equals]');
-
+const reverse = document.querySelector('[change-of-sign]')
 
 
 
@@ -116,5 +120,9 @@ operations.forEach(button => {
 
 equals.addEventListener('click', button=>{
     calculator.compute()
+    calculator.updateDisplay()
+})
+reverse.addEventListener('click', button=>{
+    calculator.reverse()
     calculator.updateDisplay()
 })
