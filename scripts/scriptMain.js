@@ -7,7 +7,7 @@ class Calculator{
     clear(){ //clear all
         this.currentOperand = ''
         this.previousOperand = ''
-        this.operetion = undefined;
+        this.operation = undefined;
         console.log("clear all")
     }
     addingNumber(number){
@@ -32,12 +32,13 @@ class Calculator{
     }
 
 
-    chooseOpereation(operetion){
+    chooseOpereation(operation){
         if(this.currentOperand === '') return
         if (this.previousOperand !== ''){
             this.compute()
+            console.log("chujka")
         }
-        this.operetion = operetion
+        this.operation = operation
         this.previousOperand = this.currentOperand 
         this.currentOperand = ''
     }
@@ -50,10 +51,18 @@ class Calculator{
         if (isNaN(prev) || isNaN(current)) return
 
         // this secions with if's could be made by switch 
-        if (this.operation = '+'){
+        if (this.operation === '+'){
             computation = prev + current 
         }
-        
+        if (this.operation === '-'){
+            computation = prev - current 
+        }
+        if (this.operation === '×'){
+            computation = prev * current 
+        }
+        if (this.operation === '÷'){
+            computation = prev / current 
+        }
         
 
 
