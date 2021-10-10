@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Calculator</title>
   <link href="styles/style_main.css" rel="stylesheet">
+  <link href="styles/style_media.css" rel="stylesheet">
   <script src="scripts/scriptMain.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -15,7 +16,8 @@
     <div class = "output">
       <h1 id="output"></h1>
     </div>
-    <div class = "buttons-grid">
+    <div class = "buttons-container">
+      <div class = "buttons-grid">
         <button clear-button class = "basicButtons operetionButtonsUp">C</button>
         <button change-of-sign class = "basicButtons operetionButtonsUp">+/-</button>
         <button data-operation class = "basicButtons operetionButtonsUp">%</button>
@@ -35,6 +37,7 @@
         <button class ="span-two" data-number-button>0</button>
         <button data-number-button class = "basicButtons">.</button>
         <button equals class = "basicButtons operetionButtonsRight">=</button>
+      </div>
     </div>
   </div>
 
