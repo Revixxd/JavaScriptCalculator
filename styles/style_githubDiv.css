@@ -1,0 +1,9 @@
+#github-img{
+    width:50px;
+  }
+  .Github-div{
+   z-index:10;
+   position:fixed;
+   top:5%;
+   left:85%;
+  }
