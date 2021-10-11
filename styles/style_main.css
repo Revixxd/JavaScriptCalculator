@@ -3,14 +3,14 @@
     font-weight: normal;
   }
   
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 35px;
-    color:white; 
-    background-color: #121111;
-    padding: 0;
-    margin: 0;
-  }
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  color:white; 
+  background-color: #121111;
+  padding: 0;
+  margin: 0;
+}
 
 .container {
   margin-top: 6.5%;
@@ -34,9 +34,10 @@ h1{
   justify-content: center;
   align-content: center;
   grid-template-columns: repeat(4, 100px);
-  grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+  grid-template-rows: minmax(100px, auto) repeat(4, 100px);
   column-gap: 10px;
   row-gap: 10px;
+
 }
 .basicButtons{
   cursor: pointer;
