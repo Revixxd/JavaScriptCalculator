@@ -5,20 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Calculator</title>
+
   <link href="styles/style_main.css" rel="stylesheet">
   <link href="styles/style_media.css" rel="stylesheet">
-  <script src="scripts/scriptMain.js" defer></script>
+  <link href="styles/style_poput.css" rel="stylesheet">
+  <link href="styles/style_githubDiv.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  
+  <script src="scripts/script_Main.js" defer></script>
+  <script src="scripts/script_Popup.js" defer></script>
+
+  
 </head>
 <body>
-  
+
+  <div class = "Github-div">
+    <a href="https://github.com/Revixxd" target="_blank">
+      <img title="My Github profile" id = "github-img" src="icons/github-Mark-64px.png"></a>
+    </a>
+  </div>
+
+  <div data-popup class = "popup">
+    <div class = "popup-content">
+      <div class = "header">
+        <h1>Basic JavaScript Calculator</h1>
+        <button data-close-button>&times;</button>
+      </div>
+      <div class = "text">
+        <p>Calculator was based on Apple IOS design</p>
+        <div class = "github-link">
+          <p>I would be appreciete if you check my others projects</p>
+          <a href="https://github.com/Revixxd" target="_blank">
+            <img src="icons/github-Mark-64px.png"  ></a>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <div class = "output">
       <h1 id="output"></h1>
     </div>
     <div class = "buttons-container">
       <div class = "buttons-grid">
-        <button clear-button class = "basicButtons operetionButtonsUp">C</button>
+        <button clear-button class  = "basicButtons operetionButtonsUp">C</button>
         <button change-of-sign class = "basicButtons operetionButtonsUp">+/-</button>
         <button data-operation class = "basicButtons operetionButtonsUp">%</button>
         <button data-operation class = "basicButtons operetionButtonsRight">÷</button>
