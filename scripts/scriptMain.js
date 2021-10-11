@@ -13,15 +13,15 @@ class Calculator{
     addingNumber(number){
 
         
-        // // .replace(/[^A-Za-z0-9]/g, "") it makes , doeasnt count on string to make 9 numbers only on output display
+        // .replace(/[^A-Za-z0-9]/g, "") it makes , doeasnt count on string to make 9 numbers only on output display
 
-        // if(this.currentOperand.replace(/[^A-Za-z0-9]/g, "").length == 6){
-        //     // make font size of output smaller 
-        //     console.log("decreasing font size of output text")
-        // } 
+        if(this.currentOperand.replace(/[^A-Za-z0-9]/g, "").length == 6){
+            // make font size of output smaller 
+            console.log("decreasing font size of output text")
+        } 
 
 
-        // if(this.currentOperand.replace(/[^A-Za-z0-9]/g, "").length == 9) return
+        if(this.currentOperand.replace(/[^A-Za-z0-9]/g, "").length == 9) return
 
         if(number === '.' && this.currentOperand.includes('.')) return
         this.currentOperand = this.currentOperand.toString() + number.toString();
